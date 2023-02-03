@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0 10px;
+    padding-bottom: 30px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;   /* подвинуть фразу в центр */
+    color: rgb(192, 135, 97);   /* цвет текста */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+h2{
+    text-align: center;
+    color: darkslategrey;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    
+}
+
+.post_block p {
+    font-size: 20px;
+    color: rgb(32, 29, 24);
+    text-align: right;
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post_block img {
+    width: 450px;
+}
+
+.post_block_3 img {
+    width: 320px;
+}
+
+.post_block {
+    border: 2px solid chocolate;
+    padding: 10px 0 10px 5px;
+    margin: 10px;
+    border-style: groove;
+    width: 470px;
+    height: 420px;
+    background-color: rgb(118, 122, 122);
+}
+
+.post_block a {
+    text-decoration: none;
+    display: block;
+}
+
+.social_link {
+    display: block;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.social_link img {
+    width: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* div{
+    color: blueviolet;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 2px dashed rebeccapurple; */
+    /* border-width: 10px;
+    border-style: dashed;
+    border-color: rebeccapurple; */
+    /* внутренний отступ */
+    /* padding: 8px 6px 5px 5px;
+    /* внешний отступ */ 
+    /*margin: 10px; /* */
+/* }  */

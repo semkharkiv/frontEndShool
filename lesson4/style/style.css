@@ -1,0 +1,80 @@
+/* h1 {
+}
+
+p {
+    border: 1px solid black;
+}
+
+.paragraph_1 {
+    width: 50%;
+    font-size: 2em;
+}
+
+.paragraph_2 {
+    width: 500px;
+}
+
+li {
+    font-size: 0.5rem;
+}
+
+div {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.block_1 {
+    width: 50vw;
+    height: 50vh;
+}
+
+.block_2 {
+    width: 500px;
+}
+
+.block_3 {
+    width: 100%;
+} */
+
+/* .block {
+    width: 50%;
+    height: 400px;
+    padding: 30px 5%;
+    margin: 40px 20%;
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-color: rgb(158, 242, 214);
+} */
+
+div {
+width: 80%;
+max-width: 1200px;
+height: 400px;
+border: 1px solid black;
+padding: 5px;
+margin: 40px;
+border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 60px;
+    margin: 40px;
+}
+
+.about-me {
+color: rgb(243, 135, 3);
+background-color: blue;
+}
+
+.my-hobbies {
+background-color: maroon;}
+
+.contacts {
+    color: coral;
+background-color: green;
+}
