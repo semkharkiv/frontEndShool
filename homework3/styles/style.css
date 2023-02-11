@@ -4,21 +4,70 @@
     box-sizing: border-box;
   }
 
-div {
-    margin: 80px;
+  body {
+    background: url(https://pngimage.net/wp-content/uploads/2018/06/fondos-negros-png-6.png)
+  }
+
+  nav {
+    height: 50px;
+    background-color: #7d6d11;
+    color: aliceblue;
+    padding: 0 20px;
+    /*  === */
+    top: 0;           /* навбар передвигается */
+    position: sticky;   /* вместе с тобой */
+}
+
+
+ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+  div.singUp {
+    box-shadow:10px 5px 5px black;
+  }
+
+  /* .singUp:hover {
+    transition: 0.4s linear 0s;
+    transform-origin: center;
+    transform:rotate(360deg) scale(1);
+  } */
+
+.singUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+    width: 420px;
+    height: 426px;
+    margin: 180px;
+    background-color: #7d6d11;
+    border-radius: 25px;
 }
 
 div.registration {
-    border: 8px solid #cfb653;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 16px;
     height: 426px;
     border-radius: 15px;
 }
 
 h2 {
+    padding-left: 22px;
     margin: 1px;
 
 }
@@ -34,18 +83,19 @@ input {
 
 
 .input_type {
-    margin-top: 18px;
+    margin: 18px;
 }
 
 
 .button_close {
-    margin-left: 500px;
+    margin-left: 380px;
     cursor: pointer;
-
+    background-color: brown;
 }
 
 p {
-    text-align: center;
+    padding-top: 15px;
+    padding-left: 65px;
     margin-top: 1px;
     font-size: 12px;
     color: #7B8E98;
@@ -55,8 +105,9 @@ p {
 }
 
 .button_entry {
-    margin-top: 0px;
+padding: 60px;
 }
+
 
 .button_registr {
     margin: 5px;
