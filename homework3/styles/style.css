@@ -35,14 +35,14 @@ ul li {
 
 
   div.singUp {
-    box-shadow:10px 5px 5px black;
+    box-shadow:10px 5px 5px rgb(37, 9, 9);
   }
 
-  /* .singUp:hover {
+  .singUp:hover {
     transition: 0.4s linear 0s;
     transform-origin: center;
     transform:rotate(360deg) scale(1);
-  } */
+  }
 
 .singUp {
     display: flex;
@@ -50,7 +50,7 @@ ul li {
     justify-content: center;
     align-items: center;
     padding: 16px;
-    position: relative;
+    position: absolute;
     width: 420px;
     height: 426px;
     margin: 180px;
