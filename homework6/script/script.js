@@ -20,7 +20,7 @@ const numbers = [3, 5, 11, 2, 8, 1, 6];
 
 let numberssquared = [];
 for (let index = 0; index < numbers.length; index++) {
-    numberssquared[index]=numbers[index]**2;   
+    numberssquared[index]=numbers[index]*numbers[index];   
 }
 console.log(numberssquared);
 
