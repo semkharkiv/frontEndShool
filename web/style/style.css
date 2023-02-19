@@ -1,0 +1,97 @@
+/* Стили для шапки */
+* {
+    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fbrazil-prof.https://img1.freepng.ru/20180324/fzq/kisspng-hair-iron-hair-straightening-artificial-hair-integ-hair-5ab5e5750b96c1.6044509715218701970475.jpg%2Fru%2Fkeratinovoe-vypryamlenie-volos%2F&psig=AOvVaw1jcV3y_z_DAKkfiSH4gxmq&ust=1676839428916000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIilieb3n_0CFQAAAAAdAAAAABAE)
+}
+
+header {
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+  
+  /* Стили для навигации */
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Стили для основного содержимого */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  ul, ol {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  ul li:before {
+    content: "•";
+    margin-right: 10px;
+  }
+  
+  ol li:before {
+    content: counter(item) ".";
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* Стили для футера */
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+ 
