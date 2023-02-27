@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form #new_item_input {
+margin-right: 10px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: rgb(221, 223, 219);
+cursor: progress;
+}
+
+button {
+    background-color: rgb(221, 223, 219);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button:focus-visible {
+    outline: none;
+}
+
+form #new_item_input:focus {
+    box-shadow: 3px 3px 8px black;
+}
+
+form #new_item_input:focus-visible {
+    outline: none;
+}
+
+form #add_item_button {
+    padding: 5px 10px;
+    background-color: rgb(38,38,38);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form #add_item_button:hover {
+    box-shadow: 2px 2px 7px black;
+}
+
+#todo_list {
+    list-style: none;
+   
+}
+
+#todo_list li {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
