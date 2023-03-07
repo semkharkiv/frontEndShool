@@ -1,6 +1,7 @@
 const form = document.querySelector("form")
 const input = document.querySelector("#new_item_input")
 const list = document.querySelector("#todo_list")
+const dateInput = document.querySelector("#new_date_input")
 
 //Добавить обработчик события для ивента (submit) у формы и предотвратить перезагрузку странички и сохранить в переменной text значение которое ввел пользователь и очистить инпут.
 //1 добавить обработчик (addEventListener) на form для ивента submit 
@@ -19,8 +20,10 @@ const list = document.querySelector("#todo_list")
 
 const todoItems = []
 
+
 function addItem(event){
     event.preventDefault()
+    let itemDate = dateInput.value
     let text = input.value
     form.reset()
     text = text.trim()  //удаляет пробелы в начале и в конце строки
@@ -31,10 +34,24 @@ function addItem(event){
 
     const todoItem = {
         text: text,
-        status: false
+        status: false,
+        date: itemDate
+
     }
     todoItems.push(todoItem)
-updateList()
+    updateList()
+}
+
+function itemRemoveHandler(event){const index = event.target.dataset.index;
+    todoItems.splice(index,1)
+    updateList()
+    }
+
+function toggleStatusHandler(event) {
+    const index = event.target.dataset.index;
+    todoItems[index].status = !todoItems[index].status;
+    updateList()
+ 
 }
 //========================================
 //cоздать для каждого todo объекта html элемент li,input,label,button
@@ -42,7 +59,7 @@ function updateList() {
     list.innerHTML = ""
 
     for (let index = 0; index < todoItems.length; index++) {
-        const {text,status} = todoItems[index]
+        const {text,status, date} = todoItems[index]
         const li = document.createElement("li")
         const input = document.createElement("input")
         const label = document.createElement("label")
@@ -50,13 +67,18 @@ function updateList() {
         button.innerText = "Remove"
         label.innerText = text
         input.setAttribute("type", "checkbox")
+        input.setAttribute("id", `item_${index}`)
+        input.setAttribute("data-index",index)
+        input.checked = status
+        input.addEventListener("change", toggleStatusHandler)
+        label.setAttribute("for", `item_${index}`)
+        if (status) {
+            label.style.textDecoration ="line-through"
+        }
         button.setAttribute("data-index", index)
         button.classList.add("remove_item")
-        button.addEventListener("click" , function(event){const index = event.target.dataset.index;
-        todoItems.splice(index,1)
-        updateList()
-        })
-
+        button.addEventListener("click" , itemRemoveHandler)
+        li.setAttribute("data-date", date)
         li.append(input,label,button)
 
         list.append(li)

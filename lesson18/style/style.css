@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: bisque;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     text-align: center;
+    padding: 10px;
+    animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: yellow; }
+  75% { color: green; }
+  100% { color: blue; }
 }
 
 form {
@@ -17,7 +31,7 @@ form {
     justify-content: center;
 }
 
-form #new_item_input {
+form #new_item_input, form #new_date_input{
 margin-right: 10px;
 padding: 5px;
 border: 1px solid #ccc;
@@ -60,12 +74,67 @@ form #add_item_button:hover {
 
 #todo_list {
     list-style: none;
-   
+    padding: 10px;
+    animation: color-change 10s infinite;
 }
+
+@keyframes color-change {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: rgb(222, 99, 214); }
+  75% { color: green; }
+  100% { color: blue; }
+}
+
 
 #todo_list li {
     display: flex;    
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-radius: 5px;
+    background-color: grey;
+    box-shadow: 0 2px 4px rgb(0,0,0,0,1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
 }
+
+#todo_list li::after {
+    content: attr(data-date);
+    font-size: 8px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+#todo_list li:not(:last-child) {
+margin-bottom: 15px;
+}
+
+#todo_list li button {
+    background-color: rgb(69, 69,69);
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+#todo_list li label {
+    width: 100%;
+    cursor: pointer;
+}
+
+#todo_list li input {
+    margin-right: 15px;
+}
+
+#todo_list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    color: darkblue;
+  }
+  
